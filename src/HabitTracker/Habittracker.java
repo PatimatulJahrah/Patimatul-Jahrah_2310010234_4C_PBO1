@@ -9,6 +9,11 @@ public class Habittracker {
         Scanner input = new Scanner(System.in);
         ArrayList<Kebiasaan> daftarKebiasaan = new ArrayList<>();
         System.out.println("=== Selamat Datang di Aplikasi Habit Tracker ===");
+        
+        PenggunaAktif pengguna = new PenggunaAktif("Patimatul Jahrah", "patimatul@uniska.ac.id", "Login Hari Ini");
 
+        pengguna.tampilkanPesan();      
+        pengguna.tampilkanAktivitas();  
     }
+    
 }
