@@ -38,6 +38,17 @@ public class Habittracker {
                         daftarKebiasaan.add(k);
                         System.out.println("✅ Kebiasaan berhasil ditambahkan.");
                         break;
+                        
+                    case 2:
+                        if (daftarKebiasaan.isEmpty()) {
+                            System.out.println("⚠ Belum ada kebiasaan yang ditambahkan.");
+                        } else {
+                            System.out.println("📋 Daftar Kebiasaan:");
+                            for (int i = 0; i < daftarKebiasaan.size(); i++) {
+                                System.out.println((i + 1) + ". " + daftarKebiasaan.get(i).getNama());
+                            }
+                        }
+                        break;
 
     }
     
