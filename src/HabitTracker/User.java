@@ -1,14 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package HabitTracker;
 
-/**
- *
- * @author fatzah
- */
 public class User {
-    
+    protected String nama;
+    protected String email;
+
+    public User(String nama, String email) {
+        this.nama = nama;
+        this.email = email;
+    }
+
+    public void tampilkanProfil() {
+        System.out.println("Nama: " + nama);
+        System.out.println("Email: " + email);
+    }
+
+    public void tampilkanPesan() {
+        System.out.println("Halo pengguna!");
+    }
 }
