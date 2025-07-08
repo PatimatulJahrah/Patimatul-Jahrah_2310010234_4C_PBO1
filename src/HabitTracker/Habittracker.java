@@ -49,6 +49,17 @@ public class Habittracker {
                             }
                         }
                         break;
+                        
+                         case 3:
+                        System.out.print("Masukkan nomor kebiasaan yang ingin dihapus: ");
+                        int hapus = input.nextInt();
+                        if (hapus > 0 && hapus <= daftarKebiasaan.size()) {
+                            daftarKebiasaan.remove(hapus - 1);
+                            System.out.println("🗑 Kebiasaan berhasil dihapus.");
+                        } else {
+                            System.out.println("❌ Nomor tidak valid.");
+                        }
+                        break;
 
     }
     
