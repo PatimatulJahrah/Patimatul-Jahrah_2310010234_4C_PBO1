@@ -14,6 +14,16 @@ public class Habittracker {
 
         pengguna.tampilkanPesan();      
         pengguna.tampilkanAktivitas();  
+        
+        int pilihan = 0;
+        do {
+            System.out.println("\n--- Menu ---");
+            System.out.println("1. Tambah Kebiasaan");
+            System.out.println("2. Lihat Semua Kebiasaan");
+            System.out.println("3. Hapus Kebiasaan");
+            System.out.println("4. Keluar");
+
     }
+    
     
 }
