@@ -60,7 +60,23 @@ public class Habittracker {
                             System.out.println("❌ Nomor tidak valid.");
                         }
                         break;
+                        
+                        case 4:
+                        System.out.println("👋 Terima kasih telah menggunakan Habit Tracker!");
+                        break;
 
+                        default:
+                        System.out.println("❌ Pilihan tidak tersedia.");
+                    }
+            } catch (InputMismatchException e) {
+                System.out.println("❌ Input harus berupa angka!");
+                input.nextLine(); // bersihkan buffer
+            }
+
+        } while (pilihan != 4);
+
+        input.close();
+    }
     }
     
     
