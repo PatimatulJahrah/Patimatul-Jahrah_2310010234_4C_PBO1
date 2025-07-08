@@ -22,6 +22,22 @@ public class Habittracker {
             System.out.println("2. Lihat Semua Kebiasaan");
             System.out.println("3. Hapus Kebiasaan");
             System.out.println("4. Keluar");
+            
+          try {
+                System.out.print("Pilih menu (1-4): ");
+                pilihan = input.nextInt();
+                input.nextLine(); 
+
+                switch (pilihan) {
+                    case 1:
+                        System.out.print("Masukkan nama kebiasaan: ");
+                        String nama = input.nextLine();
+                        System.out.print("Masukkan deskripsi: ");
+                        String deskripsi = input.nextLine();
+                        Kebiasaan k = new Kebiasaan(nama, deskripsi);
+                        daftarKebiasaan.add(k);
+                        System.out.println("✅ Kebiasaan berhasil ditambahkan.");
+                        break;
 
     }
     
