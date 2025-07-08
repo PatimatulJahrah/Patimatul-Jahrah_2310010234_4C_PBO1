@@ -1,14 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package HabitTracker;
+package habittracker;
+import java.util.ArrayList;
 
-/**
- *
- * @author fatzah
- */
-public class Tracker {
-    
+public class Tracker implements Laporan {
+    private ArrayList<Kebiasaan> kebiasaanList;
+
+    public Tracker() {
+        kebiasaanList = new ArrayList<>();
+    }
+
+    public void tambah(Kebiasaan k) {
+        kebiasaanList.add(k);
+    }
+
+    @Override
+    public void cetakLaporan() {
+        System.out.println("Laporan Semua Kebiasaan:");
+        for (Kebiasaan k : kebiasaanList) {
+            System.out.println("- " + k.getNama() + ": " + k.getDeskripsi());
+        }
+    }
 }
