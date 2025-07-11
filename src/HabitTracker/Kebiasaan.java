@@ -5,9 +5,10 @@ public class Kebiasaan {
     private String deskripsi;
 
     public Kebiasaan(String nama, String deskripsi) {
-    this.nama = nama;
-    this.deskripsi = deskripsi;
-}
+        this.nama = nama;
+        this.deskripsi = deskripsi;
+    }
+
     public String getNama() {
         return nama;
     }
@@ -23,5 +24,4 @@ public class Kebiasaan {
     public void setDeskripsi(String deskripsi) {
         this.deskripsi = deskripsi;
     }
-
 }

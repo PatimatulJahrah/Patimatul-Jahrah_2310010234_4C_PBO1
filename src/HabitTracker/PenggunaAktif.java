@@ -1,14 +1,15 @@
 package HabitTracker;
 
-public class PenggunaAktif {
+public class PenggunaAktif extends User {
     private String aktivitasTerakhir;
-    
-    public PenggunaAktif(String nama, String email, String aktivitasTerakhir){
+
+    public PenggunaAktif(String nama, String email, String aktivitasTerakhir) {
         super(nama, email);
         this.aktivitasTerakhir = aktivitasTerakhir;
     }
-    public void tampilanAktivitas(){
+
+    public void tampilkanAktivitas() {
         tampilkanProfil();
-        System.out.println("Aktivitas : " + aktivitasTerakhir);
+        System.out.println("Aktivitas: " + aktivitasTerakhir);
     }
 }

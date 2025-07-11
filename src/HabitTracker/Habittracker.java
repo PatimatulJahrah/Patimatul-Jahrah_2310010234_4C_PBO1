@@ -23,7 +23,7 @@ public class Habittracker {
             System.out.println("3. Hapus Kebiasaan");
             System.out.println("4. Keluar");
             
-          try {
+            try {
                 System.out.print("Pilih menu (1-4): ");
                 pilihan = input.nextInt();
                 input.nextLine(); 
@@ -50,7 +50,7 @@ public class Habittracker {
                         }
                         break;
                         
-                         case 3:
+                    case 3:
                         System.out.print("Masukkan nomor kebiasaan yang ingin dihapus: ");
                         int hapus = input.nextInt();
                         if (hapus > 0 && hapus <= daftarKebiasaan.size()) {
@@ -61,23 +61,20 @@ public class Habittracker {
                         }
                         break;
                         
-                        case 4:
+                    case 4:
                         System.out.println("👋 Terima kasih telah menggunakan Habit Tracker!");
                         break;
 
-                        default:
+                    default:
                         System.out.println("❌ Pilihan tidak tersedia.");
-                    }
+                }
             } catch (InputMismatchException e) {
                 System.out.println("❌ Input harus berupa angka!");
-                input.nextLine(); // bersihkan buffer
+                input.nextLine(); 
             }
 
         } while (pilihan != 4);
 
         input.close();
-    }
-    }
-    
-    
-}
+    }  
+}    

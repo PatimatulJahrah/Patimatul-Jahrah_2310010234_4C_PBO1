@@ -1,4 +1,5 @@
-package habittracker;
+package HabitTracker;
+
 import java.util.ArrayList;
 
 public class Tracker implements Laporan {
