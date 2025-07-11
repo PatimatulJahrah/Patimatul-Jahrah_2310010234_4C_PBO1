@@ -79,7 +79,7 @@ try {
 ```text
 === Selamat Datang di Aplikasi Habit Tracker ===
 Nama: Patimatul Jahrah
-Email: patimatul@uniska.ac.id
+Email: Fatzah052005@gmail.com
 Aktivitas: Login Hari Ini
 
 --- Menu ---
